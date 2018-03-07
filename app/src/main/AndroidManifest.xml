@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.imraan.computerscienceinduction">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo_final"
+        android:label="UoB CompSci Induction"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Home" />
+        <activity android:name=".ListDirectory" />
+        <activity
+            android:name=".LecturerInfo"
+            android:label="Lecturer Information" />
+        <activity
+            android:name=".ProgrammeHandbooksSpecs"
+            android:label="Programme Handbooks/Specs" />
+        <activity
+            android:name=".News"
+            android:label="News" />
+        <activity
+            android:name=".Events"
+            android:label="Events" />
+        <activity
+            android:name=".PAL"
+            android:label="PAL (Peer Assisted Learning)" />
+        <activity
+            android:name=".StudyAbroad"
+            android:label="Study Abroad" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Location"
+            android:label="Location" />
+        <activity
+            android:name=".StreetView"
+            android:label="@string/title_activity_street_view" />
+        <activity
+            android:name=".VirtualTourHorton"
+            android:label="Virtual Tour (Horton)" />
+        <activity
+            android:name=".Blackboard"
+            android:label="Blackboard" />
+        <activity
+            android:name=".VirtualTour"
+            android:label="Virtual Tour" />
+        <activity
+            android:name=".About"
+            android:label="About App">
+            //android:theme="@style/AppTheme.CustomTheme">
+        </activity>
+        <activity android:name=".SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

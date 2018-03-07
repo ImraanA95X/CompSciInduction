@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cceaff">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.imraan.computerscienceinduction.PAL">
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:layout_x="31dp"
+        android:layout_y="25dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="PAL is a student centred learning support scheme that involves students in higher levels leading regular group support sessions with new first years. Click on the links below to learn more about the PAL scheme and how it is run in the University of Bradford."
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <Button
+        android:id="@+id/buttonPowerpointPAL"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:layout_x="34dp"
+        android:layout_y="310dp"
+        android:text="PAL @ Bradford Powerpoint Presentation"
+        tools:layout_editor_absoluteX="23dp"
+        tools:layout_editor_absoluteY="276dp"
+        android:layout_below="@+id/buttonLeafletPAL"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonLeafletPAL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_x="83dp"
+        android:layout_y="233dp"
+        android:text="PAL Welcome Pack Leaflet"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="209dp" />
+
+</RelativeLayout>
+
+    <ListView
+        android:id="@+id/navList"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:background="#ffeeeeee"/>
+
+</android.support.v4.widget.DrawerLayout>
